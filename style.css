@@ -1,21 +1,62 @@
 /* Reset & base */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #eee;
+
+    margin: 0rem;
+
   }
   
   /* Header */
   .header {
+
     position: relative;
     background-color: #222;
-    padding: 1rem 2rem;
+    padding: 2.5rem 2.5rem;
     z-index: 1000;
     overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #eee;
+
   }
   
+.container {
+  position: relative;
+  background-color: #c41c1c; /* roter "Rand" außen */
+  padding: 10px;             /* ersetzt margin 10px */
+             /* vorher war div height + 2*margin */
+  box-sizing: border-box;    /* damit padding mitgerechnet wird */
+}
+
+.content-layer1,
+.content-layer2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 275px;  /* dein inneres Padding */
+}
+
+.content-layer1 {
+  background-color: #414141;
+  margin: 10px; /* entfernt den inneren Rand */
+  z-index: 2;
+  width: calc(100% - 20px); /* 100% - 2 * margin */
+  height: 100px;
+  padding: 29.5%;
+}
+
+.content-layer2 {
+  background-color: #acacac;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding: 30%;
+}
+
+
+
   /* Hintergrundbild */
   .header-background {
+
     position: absolute;
     top: 0;
     left: 0;
@@ -24,60 +65,77 @@ body {
     object-fit: cover;
     opacity: 0.35;
     z-index: 0;
+
   }
   
   /* Inhalt über dem Bild */
   .header-content {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 1;
+
   }
   
   /* Titel */
   .site-title {
+
     font-size: 28px;
     margin: 0;
+
   }
   
   /* Navigation */
   .nav-list {
+
     list-style: none;
     display: flex;
     gap: 1.5rem;
     margin: 0;
     padding: 0;
+
   }
   
   .nav-list a {
+
     color: #eee;
     text-decoration: none;
     font-size: 18px;
+
   }
   
   .nav-list a:hover {
+
     color: #0c6baa;
     text-decoration: underline;
+
   }
   
   /* Hamburger-Menü */
   .menu-toggle {
+
     display: none;
     background: none;
     border: none;
     font-size: 28px;
     color: #eee;
     cursor: pointer;
+
   }
   
   /* Responsive Design */
   @media (max-width: 768px) {
+
     .menu-toggle {
+
       display: block;
+
     }
   
     .nav {
+
       position: absolute;
       top: 100%;
       right: 2rem;
@@ -85,19 +143,28 @@ body {
       border-radius: 8px;
       padding: 1rem;
       display: none;
+
     }
   
     .nav-list {
+
       flex-direction: column;
       gap: 1rem;
+
     }
+
   
     .nav-list.show {
+
       display: flex;
+
     }
   
     .nav {
+
       display: block;
+
     }
+    
   }
   
