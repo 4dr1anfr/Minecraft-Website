@@ -22,7 +22,6 @@ body {
   position: relative;
   background-color: #c41c1c; /* roter "Rand" außen */
   padding: 10px;             /* ersetzt margin 10px */
-             /* vorher war div height + 2*margin */
   box-sizing: border-box;    /* damit padding mitgerechnet wird */
 }
 
@@ -36,6 +35,7 @@ body {
 }
 
 .content-layer1 {
+
   background-color: #414141;
   margin: 10px; /* entfernt den inneren Rand */
   z-index: 2;
@@ -45,6 +45,7 @@ body {
 }
 
 .content-layer2 {
+
   background-color: #acacac;
   z-index: 1;
   width: 100%;
@@ -52,6 +53,31 @@ body {
   padding: 30%;
 }
 
+.content-main-1{
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: larger;
+  color: #eee;
+  height: 100px;
+  margin-top: -70%;
+  width: 100%;
+ border-radius: 10px;
+ display: flex;
+
+}
+.h1-main1{}
+ 
+.h1-main1:hover{
+
+  color: #dddddd;
+
+  transition: transform 0.2s ease;
+  transform: scale(1.025);
+    text-decoration: underline;
+
+}
+
+.h1-container{}
 
 
   /* Hintergrundbild */
@@ -86,85 +112,10 @@ body {
     margin: 0;
 
   }
-  
-  /* Navigation */
-  .nav-list {
+  .site-title {
+  transition: color 0.3s;
+}
 
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-
-  }
-  
-  .nav-list a {
-
-    color: #eee;
-    text-decoration: none;
-    font-size: 18px;
-
-  }
-  
-  .nav-list a:hover {
-
-    color: #0c6baa;
-    text-decoration: underline;
-
-  }
-  
-  /* Hamburger-Menü */
-  .menu-toggle {
-
-    display: none;
-    background: none;
-    border: none;
-    font-size: 28px;
-    color: #eee;
-    cursor: pointer;
-
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-
-    .menu-toggle {
-
-      display: block;
-
-    }
-  
-    .nav {
-
-      position: absolute;
-      top: 100%;
-      right: 2rem;
-      background: #222;
-      border-radius: 8px;
-      padding: 1rem;
-      display: none;
-
-    }
-  
-    .nav-list {
-
-      flex-direction: column;
-      gap: 1rem;
-
-    }
-
-  
-    .nav-list.show {
-
-      display: flex;
-
-    }
-  
-    .nav {
-
-      display: block;
-
-    }
-    
-  }
-  
+.site-title:hover {
+  color: #dddd;
+}

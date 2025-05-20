@@ -1,0 +1,24 @@
+.button-main1 {
+
+  position: absolute;
+  top: 50%;            /* Mitte der Seite */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;       /* Viel höher */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28ac0e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  top: 300px;
+}
+.button-main1:hover {
+
+    background-color: #1e8a0b;
+    transform: translate(-50%, -50%) scale(1.05);
+    transition: transform 0.2s ease;
+
+
+}
