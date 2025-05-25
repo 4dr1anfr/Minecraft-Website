@@ -8,4 +8,7 @@ border: none;
 color: white;
 background-color: rgba(14, 172, 0, 0.932);
 /*margin-top: 30px; */
+left: 850px;
+bottom: -120px;
+position: relative;
 }
