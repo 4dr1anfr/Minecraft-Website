@@ -13,8 +13,6 @@
   <link rel="stylesheet" href="css/Button.css" />
   <link rel="icon" href="image.png" type="image/png" />
 
-  <script src="/Minecraft-Website/JsScript/jsweb.js" defer></script>
-  <script src="JsScript/copyIP.js" defer></script>
 
 </head>
 <body class="main-body" style="background-color: rgba(184, 184, 184, 0.925);">
@@ -32,7 +30,7 @@
 
           <li><a class="lang"  href="#ip-adress">IP - Adresse </a></li><li><a class="kurz"  href="#ip-adress">IP</a></li>
 
-          <li><a class="lang"  href="#galerie">Galerie</a></li><li><a class="kurz"  href="#galerie">Bilder</a></li>         
+          <li><a class="lang"  href="#galerie">Galerie</a></li><li><a class="kurz"  href="#galerie">Galerie</a></li>         
 
           <li><a class="lang"  href="#importante">Wichtiges</a></li><li><a class="kurz"  href="#importante">Wichtig</a></li>
 
@@ -49,9 +47,10 @@
 
       <h1 class="h1-main1" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Willkommen auf dem Minecraft Server</h1>
 
-       <button class="first-button">
+       <button class="first-button " onclick="copyIP()">
 
-      <span class="first-button-label" onclick="copyIP()">Minecraft IP Kopieren</span>
+      <span class="first-button-label" >Minecraft IP Kopieren</span>
+      <span class="span-copyIP" style="display: none;" id="ip-address">hier.einfügen.net</span>
 
         </button>
 
@@ -59,6 +58,8 @@
     </div>
     
   </div>
+
+ <script src="JsScript/copyIP.js"></script>
 
  </body>
 

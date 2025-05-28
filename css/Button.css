@@ -1,4 +1,5 @@
 .first-button {
+
   margin-bottom: 2rem;
   padding: 10px 20px;
   font-size: 1.2rem;
@@ -8,25 +9,35 @@
   border-radius: 5px;
   cursor: pointer;
   transition: transform 0.3s ease, padding 0.3s ease;
+  z-index: 99;
+  width: 200px; 
+  margin-left: 45%;
+
 }
 
-/* Optionales Verkleinern bei Hover */
+
 .first-button:hover {
-  transform: scaleX(0.95); /* leicht schmaler beim Hover */
+
+  color: rgb(220, 220, 220);
+  transform: scaleX(0.95); 
+  background-color: #0aa83a; 
+
 }
 
 /* Button-Text */
 .first-button-label {
+
   display: inline-block;
   text-decoration: none;
+
 }
 
 /* Responsive Anpassung */
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
+
   .first-button {
-    padding: 8px 12px;
-    width: 100%;
-    font-size: 1rem;
-    margin-bottom: 2rem;
-  }
-}
+
+  margin-left: 30%;
+
+} }
+

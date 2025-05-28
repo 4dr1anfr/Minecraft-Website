@@ -44,8 +44,10 @@
 }
 
 .nav-list a:hover {
+
   text-decoration: none;
   color: #0c6baa;
+  
 }
 
 .nav-list a:hover::after {
@@ -64,16 +66,12 @@
 
 }
 
+
 .kurz {
-
    display: none;
-
 }
-
 .lang {
-
     display: inline;
-
 }
 
 @media (max-width: 1000px) {
@@ -84,15 +82,13 @@
 
       .lang {
         display: none;
-      }
+} }
 
   
-}
+
 @media (max-width: 800px) {
 
       .nav-list {
         gap: .35rem;
-      }
-
-
-}
+     
+} }

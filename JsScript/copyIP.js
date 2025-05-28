@@ -1,13 +1,9 @@
-    function copyIP() {
-      const ipText = document.getElementById('ip').textContent;
-      const copiedMsg = document.getElementById('copied-msg');
+function copyIP() {
+  const ip = document.getElementById("ip-address").textContent; //in index.html ip-addresse "id"
 
-      navigator.clipboard.writeText(ipText).then(() => {
-        copiedMsg.style.display = 'inline';
-        setTimeout(() => {
-          copiedMsg.style.display = 'none';
-        }, 2000);
-      }).catch(err => {
-        alert("Kopieren fehlgeschlagen: " + err);
-      });
-    }
+  navigator.clipboard.writeText(ip).then(() => {
+    alert("Die IP-Adresse "+ "'" + ip + "'" + " wurde kopiert.");
+  }).catch(err => {
+    alert("Fehler beim Kopieren: " + err);
+  });
+}
