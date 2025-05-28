@@ -1,59 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="testung.css">
 </head>
 <body>
-    
-
-<h1>Testung</h1>
-<p>Dies ist eine Testseite.</p>
-<a href="index.html">Zurück zur Startseite</a>
-
-<input type="text" value="play.smp-craft.de" id="ipField" readonly hidden>
-<button onclick="copyIP()">IP kopieren</button>
-
-<script>
-function copyIP() {
-  const input = document.getElementById("ipField");
-  navigator.clipboard.writeText(input.value)
-    .then(() => alert("IP kopiert!"))
-    .catch(err => console.error(err));
-}
-</script>
-
-<button onclick="sendInfo()">Infos an Server senden</button>
-
-<script>
-async function sendInfo() {
-  const userAgent = navigator.userAgent;
-  const language = navigator.language;
-  const platform = navigator.platform;
-
-  const ipData = await fetch("https://ipapi.co/json/").then(res => res.json());
-  const ip = ipData.ip;
-  const location = `${ipData.city}, ${ipData.country_name}`;
-
-  const data = {
-    ip,
-    location,
-    userAgent,
-    platform,
-    language
-  };
-
-  fetch("save.php", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(data)
-  })
-  .then(res => res.text())
-  .then(msg => alert(msg))
-  .catch(err => console.error("Fehler:", err));
-}
-</script>
+  
+  <div class="main1">
+    <h1>Testung</h1>
+    <p>Hier wird die Testung der Website durchgeführt.</p>
+    <p>Die Testung umfasst die Überprüfung der Funktionalität, Benutzerfreundlichkeit und Leistung der Website.</p>
+    <p>Bitte beachten Sie, dass dies eine Testseite ist und keine echten Daten enthält.</p>
+  </div>
 
 
 </body>
