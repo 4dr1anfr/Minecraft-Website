@@ -25,6 +25,32 @@
     text-decoration: underline;
 
   }
+  .nav-list a {
+  position: relative;
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.nav-list a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #0c6baa;
+  transition: width 0.4s ease;
+}
+
+.nav-list a:hover {
+  text-decoration: none;
+  color: #0c6baa;
+}
+
+.nav-list a:hover::after {
+  width: 100%;
+}
   
   /* Hamburger-Menü */
   .menu-toggle {
@@ -37,15 +63,20 @@
     cursor: pointer;
 
 }
-    .kurz {
-      display: none;
-    }
 
-    .lang {
-      display: inline;
-    }
+.kurz {
 
-@media (max-width: 1200px) {
+   display: none;
+
+}
+
+.lang {
+
+    display: inline;
+
+}
+
+@media (max-width: 1000px) {
 
         .kurz {
         display: inline;
@@ -56,4 +87,12 @@
       }
 
   
+}
+@media (max-width: 800px) {
+
+      .nav-list {
+        gap: .35rem;
+      }
+
+
 }

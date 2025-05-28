@@ -10,9 +10,11 @@
   <link rel="stylesheet" href="css/mainnav.css" />
   <link rel="stylesheet" href="css/firstbutton.css" />
   <link rel="stylesheet" href="css/Tile1.css" />
+  <link rel="stylesheet" href="css/Button.css" />
   <link rel="icon" href="image.png" type="image/png" />
 
   <script src="/Minecraft-Website/JsScript/jsweb.js" defer></script>
+  <script src="JsScript/copyIP.js" defer></script>
 
 </head>
 <body class="main-body" style="background-color: rgba(184, 184, 184, 0.925);">
@@ -28,7 +30,7 @@
 
         <ul class="nav-list">
 
-          <li><a class="lang"  href="#ip-adress">IP-Adresse</a></li><li><a class="kurz"  href="#ip-adress">Server-IP</a></li>
+          <li><a class="lang"  href="#ip-adress">IP - Adresse </a></li><li><a class="kurz"  href="#ip-adress">IP</a></li>
 
           <li><a class="lang"  href="#galerie">Galerie</a></li><li><a class="kurz"  href="#galerie">Bilder</a></li>         
 
@@ -42,11 +44,22 @@
   </header>
 
   <div class="content">
+
     <div class="content-layer-1">
+
       <h1 class="h1-main1" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Willkommen auf dem Minecraft Server</h1>
-  
- 
- </div>
+
+       <button class="first-button">
+
+      <span class="first-button-label" onclick="copyIP()">Minecraft IP Kopieren</span>
+
+        </button>
+
+
+    </div>
+    
   </div>
-    </body>
+
+ </body>
+
 </html>
