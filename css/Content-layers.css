@@ -18,3 +18,9 @@ text-align: center;
 } }
 
 
+.content-layer-2{
+  background-color: rgb(120, 120, 120);
+  display: flex;
+  margin: .25rem;
+  border-radius: 5px;
+}
