@@ -52,12 +52,17 @@ body {
     margin: 0;
 
   }
-  .site-title {
+
+.site-title {
+
   transition: color 0.3s;
+
 }
 
 .site-title:hover {
+
   color: #dddd;
+  
 }
 .blank-space1{
 

@@ -10,7 +10,6 @@
 
   }
   
-  
   .nav-list a {
 
     color: #eee;
@@ -26,13 +25,16 @@
 
   }
   .nav-list a {
+
   position: relative;
   color: #eee;
   text-decoration: none;
   transition: color 0.5s ease;
+
 }
 
 .nav-list a::after {
+
   content: '';
   position: absolute;
   left: 0;
@@ -41,6 +43,7 @@
   width: 0;
   background-color: #0c6baa;
   transition: width 0.4s ease;
+
 }
 
 .nav-list a:hover {
@@ -51,7 +54,9 @@
 }
 
 .nav-list a:hover::after {
+
   width: 100%;
+
 }
   
   /* Hamburger-Menü */
@@ -66,12 +71,15 @@
 
 }
 
-
 .kurz {
+
    display: none;
+
 }
 .lang {
+
     display: inline;
+
 }
 
 @media (max-width: 1000px) {
@@ -83,8 +91,6 @@
       .lang {
         display: none;
 } }
-
-  
 
 @media (max-width: 800px) {
 
