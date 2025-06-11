@@ -7,3 +7,6 @@ function copyIP() {
     alert("Fehler beim Kopieren: " + err);
   });
 }
+
+
+
