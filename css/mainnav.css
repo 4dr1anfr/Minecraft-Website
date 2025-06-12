@@ -95,6 +95,6 @@
 @media (max-width: 800px) {
 
       .nav-list {
-        gap: .35rem;
+        gap: .8rem; /*gap: .35rem;*/
      
 } }

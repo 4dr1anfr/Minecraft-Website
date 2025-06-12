@@ -3,31 +3,39 @@
   background-color: rgb(120, 120, 120);
   display: flex;
   flex-direction: column;
-  margin: .25rem;
+  margin: .4rem;
   border-radius: 5px;
 
 }
 
 .h1-main1{ 
-
+font-size: 45px; 
 text-align: center;
 
 }
+.content-layer-3{
 
+  background-color:rgb(120, 120, 120);
+  border-radius: 5px;
+/*  margin-top: -.4rem; */
+  margin: -1.25rem .4rem;
 
+  /* .25rem; */
+
+}
 
 .content-layer-2{
 
   background-color: rgb(120, 120, 120);
   display: flex;
-  margin: .25rem;
+  margin: .4rem;
   border-radius: 5px;
-
+  
 }
 
 @media (max-width: 800px) {
   
   .h1-main1 {
-    font-size: 35px; 
+    font-size: 40px; 
  
 } }

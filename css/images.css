@@ -1,10 +1,46 @@
 .img1,
 .img2,
 .img3,
-.img4{
+.img4,
+.img5{
 
-    padding: 20px;
+    margin-left: 100px;
+    padding: 5px;
     width: 256px;
     height: 144px;
+    background-color: rgb(170, 170, 170);
 
+}
+.img5{
+
+    display: inline;
+
+}
+.gallery-pictures{
+
+    display: flex;
+    margin-bottom: 30px;
+
+}
+@media (max-width: 2000px) {
+
+    .gallery-pictures{
+
+        display:inline;
+
+        
+    }
+    
+    .img1,.img2,.img3,.img4,.img5{
+
+        margin: 7.5px;
+        margin-left: 37.5px;
+
+    }
+    .img5{
+
+    display: none;
+
+}
+ 
 }

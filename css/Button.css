@@ -11,7 +11,7 @@
   transition: transform 0.3s ease, padding 0.3s ease;
   z-index: 99;
   width: 200px; 
-  margin-left: 43.6%;
+  margin-left: 43.6%; /*43.6*/
   margin-top: 4%;
 
 }
@@ -38,7 +38,7 @@
 
   .first-button {
 
-  margin-left: 30%;
+  margin-left: 36%;
    margin-top: 9%;
 
 } }
