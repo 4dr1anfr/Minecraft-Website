@@ -19,11 +19,14 @@ text-align: center;
   border-radius: 5px;
 /*  margin-top: -.4rem; */
   margin: -1.25rem .4rem;
-
   /* .25rem; */
 
 }
+.h3-main3,.test{
 
+  margin-left: 15px;
+
+}
 .content-layer-2{
 
   background-color: rgb(120, 120, 120);
